@@ -4,10 +4,16 @@ describe 'fizzbuzz' do
 	it 'should return a new game object' do
 		game.should be_an_instance_of Game
 	end
-	it 'should return a range from 1..100' do
-		game.range.should == (1..100)
+	it 'should return the number if it is not fizz/buzz/fizzbuzz' do
+		game.play(1..2).should include(1)
 	end
-	it 'should print all of the range' do
-		game.range.should == (1..100)
+	it 'should return the fizz if it is fizzable' do
+		game.play(1..5).should_not include (5)
+	end
+	it 'should return buzz if it is buzzable' do
+		game.play(3).should == 'fizz'
+	end
+	it 'should return fizzbuzz if it is fizzable and buzzable' do
+		game.play(15).should == 'fizzbuzz'
 	end
 end

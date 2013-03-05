@@ -10,18 +10,18 @@ class Game
 				buzz
 			else
 				puts "#{number}" 
-			end
+			end        
 		end
 	end
   def fizzbuzz
     print "fizzbuzz\n"
   end
-	def fizz
-		print "fizz\n"
-	end
-	def buzz
-		print "buzz\n"
-	end
+  def fizz
+    print "fizz\n"
+  end
+  def buzz
+    print "buzz\n"
+  end
 end
 
 #game = Game.new

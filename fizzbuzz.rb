@@ -13,11 +13,11 @@ class Game
 			end
 		end
 	end
+  def fizzbuzz
+    print "fizzbuzz\n"
+  end
 	def fizz
 		print "fizz\n"
-	end
-	def fizzbuzz
-		print "fizzbuzz\n"
 	end
 	def buzz
 		print "buzz\n"
